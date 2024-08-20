@@ -7,7 +7,7 @@ const Questao03 = () => {
   });
 
   // A seguinte função assínctrona vai acessar o conteudo da API
-  // e ainda vai encontrar em ordem as capitais com Maior e menor população
+  // e ainda vai encontrar em ordem as capitais com Maior e menor população através do loop
   const buscarDados = async () => {
     try {
       const response = await fetch("https://restcountries.com/v3.1/region/europe?fields=capital,population");
