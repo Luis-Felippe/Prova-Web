@@ -26,10 +26,15 @@ function Questao01B({lista}){
         const maiores = [];
         for (let i = 0; i < lista.length; i++) {
           const valores = Object.values(lista[i]);
+
           let maior = valores[0];
+
           for (let j = 1; j < valores.length; j++) {
+
             if (valores[j] > maior) {
+
               maior = valores[j];
+              
             }
           }
           maiores.push(maior);
@@ -46,10 +51,13 @@ function Questao01B({lista}){
       const renderizarMaioresValores = () => {
         const elementos = [];
         for (let i = 0; i < maioresValores.length; i++) {
+
           elementos.push(
             <p key={i}>maior numero do objeto {i + 1}:<strong> {maioresValores[i]}</strong></p>
           );
+
         }
+
         return elementos;
       };
 

@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 const Questao04 = () => {
   const [capitais, setCapitais] = useState({
-    menorPopulacao: '',
-    maiorPopulacao: ''
+    menorPopulacao: '', maiorPopulacao: ''
   });
 
-  // Criação da Promise com os dados locais
+  // Criação da promessa com a utilização dos dados locais
   const pegarDados = () => {
     return new Promise((resolve, reject) => {
       const dados = [
@@ -14,10 +13,11 @@ const Questao04 = () => {
         { capital: ["Nicosia"], population: 1207361 },
         { capital: ["Madrid"], population: 47351567 }
       ];
+
       resolve(dados); 
-      if(dados === null){
-        reject('esse erro é impossível')
-      }
+
+      if(dados === null) reject('esse erro é impossível')
+      
     });
   };
 
@@ -35,6 +35,7 @@ const Questao04 = () => {
         if (dados[i].population < menor.population) {
           menor = dados[i];
         }
+        
         if (dados[i].population > maior.population) {
           maior = dados[i];
         }

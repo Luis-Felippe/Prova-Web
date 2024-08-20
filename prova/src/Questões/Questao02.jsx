@@ -9,7 +9,9 @@ const Questao02 = () => {
 
   // Essa função cuida da alternancia entre as imagens. Quando é true mostra a frente e false mostra as costas
   const handleAltImage = () => {
-    setFront(!front); // Inverte o valor do estado 'frente'
+
+    setFront(!front); // Inverte o valor da variavel
+    
   };
 
   return (
@@ -19,7 +21,7 @@ const Questao02 = () => {
       <img
         src={front ? imageFront : imageBack}
         alt="Pikachu"
-        style={{ width: '200px', height: '200px' }}
+        style={{ width: '150px', height: '150px' }}
       />
       <br />
       <button onClick={handleAltImage} style={{ marginTop: '20px', padding: '10px 20px' }}>
