@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Questao01A from "./Questões/Questao01";
+import Questao02 from "./Questões/Questao02";
+import Questao03 from "./Questões/Questao03";
+import Questao04 from "./Questões/Questao04";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <h1>Nome: Luis Felippe Morais de Lima </h1>
+    <h2>Matrícula: 538605</h2>
+    <Questao01A/>
+    <Questao02/>
+    <Questao03/>
+    <Questao04/>
+   </div>
   );
 }
 

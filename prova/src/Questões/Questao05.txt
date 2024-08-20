@@ -1,0 +1,4 @@
+O prop Drilling é uma setuação em que dados de um componente precisam ser acessados por um ou mais componentes,
+o que acaba se tornando um problema quando esse dado precisa ser passado por varios componentes.
+O React Context resolve esse problema sem precisar passar esses dados via PROPS, é somente necessario que 
+seja criado um contexto daquele dado, para que os devidos componentes possam utilizar (useContext) essas informações
